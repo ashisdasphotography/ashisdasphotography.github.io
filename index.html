@@ -34,44 +34,8 @@
             </div>
         </div>
 
-<!-- Home Section -->
-	<section id="home" class="">
-	
-	
-		<section id="pagetop" class="contain">
-		
-			<div class="inner pagetop">
-			
-				<div class="col-xs-6 left">
-					We are here to frame your precious lifetime Momentz.
-				</div>
-				
-				<div class="col-xs-6 right">
-					
-					<a href="mailto:momentzzzz@yahoo.com">
-						<i class="fa fa-envelope"></i>
-					</a>
-					<a href="http://www.flickr.com/photos/mmnt7">
-						<i class="fa fa-flickr"></i>
-					</a>
-					<a href="momentz___">
-						<i class="fa fa-instagram"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-vimeo-square"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-rss"></i>
-					</a>
-					
-				</div>
-				
-				
-				<div class="clear"></div>
-			</div>
-		
-		</section>
-		
+	<!-- Home Section -->
+	<section id="home" class="">		
 		
 	<!-- Navigation Section -->
 	<section id="navigation" class="shadow">
@@ -85,31 +49,25 @@
 			</div>
 			
 			<!-- Nav Menu -->
-			<div class="nav-menu">
-				
-				<ul class="nav main-nav">
-				
-					<li class="active"><a href="index.html">home</a></li>
-					<li><a href="gallery.html">gallery</a></li>
-					<li><a href="awards.html">awards</a></li>
-					<li><a href="prices.html">prices</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-				
-			</div>
-			
-			
-				<!-- Dropdown Menu For Mobile Devices-->
-				<div class="dropdown mobile-drop">
-				  <a data-toggle="dropdown" class="mobile-menu" href="#"><i class="fa fa-bars"></i></a>
-				  <ul class="nav dropdown-menu fullwidth" role="menu" >
+			<div class="nav-menu">				
+				<ul class="nav main-nav" id="nav">				
 					<li><a href="index.html">home</a></li>
 					<li><a href="gallery.html">gallery</a></li>
-					<li><a href="awards.html">awards</a></li>
-					<li><a href="prices.html">prices</a></li>
+					<li><a href="about.html">about</a></li>
 					<li><a href="contact.html">contact</a></li>
-				  </ul>
-				</div>
+				</ul>				
+			</div>			
+			
+			<!-- Dropdown Menu For Mobile Devices-->
+			<div class="dropdown mobile-drop">
+			  <a data-toggle="dropdown" class="mobile-menu" href="#"><i class="fa fa-bars"></i></a>
+			  <ul class="nav dropdown-menu fullwidth" role="menu" id="nav">
+				<li><a href="index.html">home</a></li>
+				<li><a href="gallery.html">gallery</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="contact.html">contact</a></li>
+			  </ul>
+			</div>
 		
 			<div class="clear"></div>
 		</div>
@@ -139,25 +97,6 @@
 				<li class="revslide" data-transition="fade" data-slotamount="7" data-masterspeed="800" data-delay="2000">
 					<img src="images/rev-slider/slider12.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">				
 				</li>
-							
-				<!--
-				<li class="revslide" data-transition="fade" data-slotamount="7" data-masterspeed="800" data-delay="2000" >
-					<img src="images/rev-slider/slider1.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-				</li>			
-				<li class="revslide" data-transition="fade" data-slotamount="7" data-masterspeed="800" data-delay="2000">
-					<img src="images/rev-slider/slider8.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-				</li> 
-				
-				
-				<li class="revslide" data-transition="fade" data-slotamount="7" data-masterspeed="800" >
-					<img src="images/rev-slider/slider10.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">				
-				</li>
-				
-				<li class="revslide" data-transition="fade" data-slotamount="7" data-masterspeed="800" >
-					<img src="images/rev-slider/slider11.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">				
-				</li>
-
-				 -->
 			</ul>
 		</div>
 		</section>
@@ -181,6 +120,23 @@
 				<p class="footer-text">
 					<span>Cell</span>:<span>01717024050</span>
 				</p>
+				<p>					
+					<a href="mailto:momentzzzz@yahoo.com" style="padding: 5px">
+						<i class="fa fa-envelope"></i>
+					</a>
+					<a href="http://www.flickr.com/photos/mmnt7" style="padding: 5px">
+						<i class="fa fa-flickr"></i>
+					</a>
+					<a href="momentz___" style="padding: 5px">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="#" style="padding: 5px">
+						<i class="fa fa-vimeo-square"></i>
+					</a>
+					<a href="#" style="padding: 5px">
+						<i class="fa fa-rss"></i>
+					</a>					
+				</p>
 			</div>
 			
 			<!-- Socials and Mail -->
@@ -198,7 +154,7 @@
 				
 				<!-- Copyright -->
 				<p class="footer-text copyright">
-					©2021 momentz. all rights reserved.
+					©2022 Ashis Das Photography. All rights reserved.
 				</p>
 			</div>
 			
@@ -249,6 +205,19 @@
 	<script type="text/javascript" src="js/plugins.js"></script>
 
 	 <!-- End JS Files -->
+	<script type="text/javascript">
+		$(function(){
+		    // this will get the full URL at the address bar
+		    var url = window.location.href; 
 
+		    // passes on every "a" tag 
+		    $("#nav a").each(function() {
+		        // checks if its the same on the address bar
+		        if(url == (this.href)) { 
+		            $(this).closest("li").addClass("active");
+		        }
+		    });
+		});
+	</script>
 </body>
 </html>
