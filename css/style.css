@@ -3036,7 +3036,8 @@
   padding: 20px;
   border: 1px solid #888;
   /*width: 80%;*/
-  width: 100%;
+  /*width: 100vw !important;*/
+  height: 100vh !important;
 }
 
 /* The Close Button */
@@ -3062,4 +3063,8 @@
 }
 .mb2{
 	margin-bottom: 2%;
+}
+
+.overflowHidden{
+    overflow: hidden;
 }
