@@ -3068,3 +3068,12 @@
 .overflowHidden{
     overflow: hidden;
 }
+.contactIconColor{
+	color: #4fc9e0;
+}
+.font16{
+	font-size: 16px;
+}
+.font22{
+	font-size: 22px;
+}
